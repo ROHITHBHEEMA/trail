@@ -11,11 +11,11 @@
 <body>
     <div class="container">
         <h1>ASSOCIATION REGISTRATION FORM</h1>
-        <form action="/users" method="POST" enctype="multipart/form-data">
+        <form action="/" method="POST" enctype="multipart/form-data">
             <div class="row">
                 <h2>Details regarding Assocation</h2>
                 <div class="col-25">
-                    <label for="Aname" required>Association Name*</label>
+                    <label for="Aname" required>Association Name</label>
                 </div>
                 <!-- association name -->
                 <div class="col-75">
@@ -26,7 +26,7 @@
             </div>
             <div class="row">
                 <div class="col-25">
-                    <label for="AType" required>Assocation type*</label>
+                    <label for="AType" required>Assocation type</label>
                 </div>
                 <div class="col-75">
                     <select id="Atype" name="AssociationType" required>
@@ -42,7 +42,7 @@
             <div class="row">
                 <h2>Description</h2>
                 <div class="col-25">
-                    <label for="DescHeading">Heading*</label>
+                    <label for="DescHeading">Heading</label>
                 </div>
                 <div class="col-75">
                     <input type="text" id="DescHeading" name="DescHeading" placeholder="Title of your Description">
@@ -50,29 +50,31 @@
             </div>
             <div class="row">
                 <div class="col-25">
-                    <label for="desc" required>Description*</label>
+                    <label for="desc" required>Description</label>
                 </div>
                 <div class="col-75">
                     <textarea id="desc" name="desc" placeholder="Write the Description of your Association."
                         style="height:200px" required></textarea>
                 </div>
             </div>
-            <div class="row">
+            <!-- <div class="row">
                 <div class="col-25">
                     <label for="desc">Image for Description*</label>
                 </div>
                 <div class="col-75">
                     <% if(typeof msg!="undefined"){ %>
                     <h4 style="color: red;">UPLOAD IMAGES ONLY</h4>
-                    <%}%>
+                    <%}%> -->
+
         <!-- <%=typeof msg!="undefined" ? 'Upload Images Only':''%> -->
-                    <input type="file" name="DescImg" id="DescImg" required>
+
+                    <!-- <input type="file" name="DescImg" id="DescImg" required>
                 </div>
-            </div>
+            </div> -->
             <div class="row">
-                <h2>Details of members and events*</h2>
+                <h2>Details of members and events</h2>
                 <div class="col-25">
-                    <label for="Aname">Active members*</label>
+                    <label for="Aname">Active members</label>
                 </div>
                 <div class="col-75">
                     <input type="number" id="Aname" name="activeMembers"
@@ -81,14 +83,14 @@
             </div>
             <div class="row">
                 <div class="col-25">
-                    <label for="Aname">Number of events conducted*</label>
+                    <label for="Aname">Number of events conducted</label>
                 </div>
                 <div class="col-75">
                     <input type="number" id="Aname" name="totalEvents"
                         placeholder="Number of total events conducted by association" required>
                 </div>
             </div>
-            <div class="row">
+            <!-- <div class="row">
                 <h2>Photo Gallery</h2>
                 <article>
                     <div class="col-25">
@@ -100,8 +102,8 @@
                         <input id="files" type="file" name="galleryImag" multiple / ></div>
                         <button type="button" id="clear">Clear</button>
                         <output id="result" />
-        </article>
-    </div>
+                </article>
+            </div> -->
     <div class="row">
         <h2>Details of Partners</h2>
         <h4>Partner one:</h4>
@@ -120,7 +122,7 @@
         <input type="text" id="P1Pos" name="P1Pos" placeholder="Position of parnter in the association" required>
           </div>
       </div>
-      <div class="row">
+      <!-- <div class="row">
       <div class="col-25">
         <label for="P1Img">Image of parnter</label>
       </div>
@@ -130,7 +132,7 @@
                         <%}%>
           <input type="file" name="P1Img" id="P1Img" required>
       </div>
-    </div>
+    </div> -->
         <div class="row">
           <h4>Partner two:</h4>
       <div class="col-25">
@@ -148,7 +150,7 @@
         <input type="text" id="P2Pos" name="P2Pos" placeholder="Position of parnter in the association">
           </div>
       </div>
-      <div class="row">
+      <!-- <div class="row">
       <div class="col-25">
         <label for="P2Img">Image of parnter</label>
       </div>
@@ -158,7 +160,7 @@
                         <%}%>
           <input type="file" name="P2Img" id="P2Img">
       </div>
-    </div>
+    </div> -->
        <div class="row">
           <h4>Partner three:</h4>
       <div class="col-25">
@@ -176,7 +178,7 @@
         <input type="text" id="P3Pos" name="P3Pos" placeholder="Position of parnter in the association">
           </div>
       </div>
-      <div class="row">
+      <!-- <div class="row">
       <div class="col-25">
         <label for="P3Img">Image of parnter</label>
       </div>
@@ -186,7 +188,7 @@
                         <%}%>
           <input type="file" name="P3Img" id="P3Img">
       </div>
-    </div>
+    </div> -->
       <div class="row">
           <h2>Contact Details</h2>
       <div class="col-25">
